@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="MyFirstApp">
+<head>
+    <meta charset="utf-8">
+    <title>Hola Controller</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script type="text/javascript" src="controller.js"></script>
+<script>
+    angular.module("MyFirstApp").controller("ThirdController",function($scope){
+$scope.age= "25";
+})
+</script>
+
+</head>
+<body >
+    
+    <!-- <div ng-controller="FirstController">   
+        {{"Hola "+ nombre}}
+    </div>
+
+    <div ng-controller="SecondController">
+        {{"Hola "+ second}}
+    </div> -->
+    <div ng-controller="ThirdController">
+        {{"Hola "+ age}}
+    </div>
+</body>
+
+</html>
